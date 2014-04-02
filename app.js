@@ -31,18 +31,6 @@ app.configure(function() {
   app.use(express.static(__dirname + '/public'));
 });
 
-function compile(str, path) {
-  return stylus(str)
-    .define("import_tree", importTree)
-    .use(nib())
-    .set('compress', true);
-}
-
-app.use(stylus.middleware({
-  src: __dirname + '/public',
-  compile : compile
-}));
-
 // all environments
 app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));

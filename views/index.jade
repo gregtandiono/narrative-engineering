@@ -1,0 +1,75 @@
+extends layout
+
+block hero
+  section.hero-unit.home-hero
+    h1.uk-text-center 
+      | Narrative-Driven Engineering
+    .divider.white
+    em.uk-text-center Open Source Projects, Experiments & the rants of 
+      span Gregory Tandiono
+      br
+      | Front-End JavaScript Developer, UX Engineer, UI Developer
+
+block content
+  main.narrative-container.uk-container-center
+    h2.uk-text-center Narrative-Driven
+    .divider.dark
+    em.inline.uk-text-center What does it mean?
+    :markdown
+      It means focusing on how the user will use the product by making user-conscious decisions. We *narrate* our products
+      instead of dictating and/or forcing the user to do you want them to do. This is a trait that I have 
+      acquired over the years of designing & programming digital products.
+
+      Much like this website, it is distraction-free, and straight to the point, I am narrating my qualities as a Developer
+      as well as a designer.
+
+    h2: em.inline.uk-text-center So What is the Point of this Website?
+    :markdown
+      Rather than showcasing what client work I have done or putting logos of big client work, I'm taking a different
+      approach on how I can appeal to both designers, developers and the industry that we live and breathe in.
+
+
+      This site is open to developers, designers to contribute, inspire, and discuss. 
+
+
+    h2: em.inline.uk-text-center Who am I?
+    :markdown
+      I am a UX Engineer, UI Developer & Front-End Developer. JavaScript is my brand of justice and NodeJs is my weapon of choice. 
+      I build state-of-the-art interfaces and I make them work. I specialize in startup development environment.
+
+    //- #disqus_thread
+    
+
+    //- noscript
+    //-   | Please enable JavaScript to view the
+    //-   a(href='http://disqus.com/?ref_noscript') comments powered by Disqus.
+    //- a.dsq-brlink(href='http://disqus.com')
+    //-   | comments powered by
+    //-   span.logo-disqus Disqus
+
+
+  section.showcase
+    .container#open-source
+      .content.uk-float-left
+        h3 Open Source Projects
+          span.description I love creating & contributing to open source projects, fork it, star it,
+            | and I am open to Pull Requests
+        a(href='') View Projects
+      .img-placeholder(data-uk-scrollspy='{cls: "uk-animation-slide-top", delay:500}').uk-float-right
+        img(src='/images/github.png').uk-align-center.is-bouncing
+    .container#interfaces
+      .content.uk-float-left
+        h3 Interfaces
+          span.description I've always been awed & inspired by some of the things people do for free.
+            | This is my way of giving back to the community that taught me everything.
+        a(href='') Check it out
+    .container#experiments
+      .content.uk-float-left
+        h3 Experiments
+          span.description I do a lot of experiments when it comes to GUI, UX and UI. Some may make 
+            | sense, some won't, some could use some feedback from the UX community. Dive in & go bananas with it.
+            | As usual, it is free, and you can fork it, discuss it, whatever you want to do.
+        a(href='') Go Nuts
+
+//- block scripts
+//-   script(src='/vendor/disqus/disqus.js')

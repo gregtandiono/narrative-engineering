@@ -64,22 +64,17 @@ block content
 
 
   section.showcase
-    .container#open-source
-      .content.uk-float-left
-        h3 Open Source Projects
-          span.description I love creating & contributing to open source projects, fork it, star it,
-            | and I am open to Pull Requests
-        a(href='') View Projects
-      .img-placeholder(data-uk-scrollspy='{cls: "uk-animation-slide-top", delay:500}').uk-float-right
-        img(src='/images/github.png').uk-align-center.is-bouncing
+
     .container#interfaces
       .content.uk-float-left
         h3 Interfaces
           span.description I've always been awed & inspired by some of the things people do for free.
-            | This is my way of giving back to the community that taught me everything.
+            | I love creating & contributing to open source projects, fork it, star it, and I am open to Pull Requests
         a(href='') Check it out
       .img-placeholder(data-uk-scrollspy='{cls: "uk-animation-fade", delay:500}').uk-float-right
+        img(src='/images/github.png').uk-align-center.is-bouncing.force-absolute-pos#octocat
         img(src='/images/interface.png').uk-align-center
+        
     .container#experiments
       .content.uk-float-left
         h3 Experiments
@@ -89,6 +84,15 @@ block content
         a(href='') Go Nuts
       .img-placeholder(data-uk-scrollspy='{cls: "uk-animation-fade", delay:500}').uk-float-right
         img(src='/images/lab.png').uk-align-center
+
+    .container#narrative
+      .content.uk-float-left
+        h3 Narrative
+          span.description My thoughts, collection of tech info & free swags I find on the internet, or just plain 
+            | random crap.
+        a(href='') Read about it
+      .img-placeholder(data-uk-scrollspy='{cls: "uk-animation-fade", delay:500}').uk-float-right
+        img(src='/images/narrative.png').uk-align-center
 
   footer
     .container

@@ -1,7 +1,7 @@
 (function() {
   $(window).scroll(function() {
       var scroll = $(window).scrollTop();
-      if (scroll >= 100) {
+      if (scroll >= 400) {
           $("header").addClass("is-scrolled");
       }
       else if (scroll <= 200) {

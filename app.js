@@ -6,6 +6,7 @@
 var express = require('express'),
     stylus = require('stylus'),
     nib = require('nib'),
+    typogr = require('typogr'),
     routes = require('./routes'),
     user = require('./routes/user'),
     marked = require('marked'),

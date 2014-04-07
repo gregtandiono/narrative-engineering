@@ -1,0 +1,21 @@
+extends /article
+block hero
+  section.hero-unit
+    .home-hero
+    .home-hero.is-scrolled
+    img(src='/images/logo.svg').uk-align-center
+    h1.uk-text-center 
+      | Narrative-Driven Engineer
+    .divider.white
+    em.uk-text-center Open Source Projects, Experiments & the rants of 
+      span Gregory Tandiono
+      br
+      | Front-End JavaScript Developer, UX Engineer, UI Developer
+block post
+  :markdown
+    lorem ipsum dolor sit amet
+    ```javascript
+    $('.something').click(function(){
+      // Do something
+    })
+    ```
